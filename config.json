@@ -1,0 +1,21 @@
+{
+    "FTP":{
+        "IP":"124.153.118.111",
+        "user":"USerName",
+        "password":"sdsksdjnjs;ss55s",
+        "UserName":"Bravisa"
+    },
+    "DBLocal":{
+        "host":"124.153.118.111",
+        "DB":"db_Test",
+        "DBuser":"postgres",
+        "DBPass":"postgres",
+        "DBPort":"5432"
+    },
+    "DBProd":{
+        "host":"124.153.118.111",
+        "DB":"db_Test",
+        "DBuser":"postgresUser",
+        "DBPass":"ghjhf767d78*(cg"
+    }
+}

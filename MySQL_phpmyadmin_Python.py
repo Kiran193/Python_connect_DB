@@ -6,13 +6,13 @@ from pymysql.cursors import Cursor
 def db_connect():
 
     #database connection
-    connection = pymysql.connect(user='pmsdb', 
-                                password='pms@1234',
-                                host='192.168.0.236',
-                                database='pms' )
+    connection = pymysql.connect(user='USERNAME', 
+                                password='PASSWORD',
+                                host='hostIPorName',
+                                database='DBNAME' )
     # cnx = mysql.connector.connect(user='root', password='root@123',
-    #                                 host='192.168.0.236',
-    #                                 database='pms')
+    #                                 host='hostIPorName',
+    #                                 database='DBNAME')
     cursor = connection.cursor()
 
     return cursor, connection
@@ -32,7 +32,7 @@ def create_table():
 def select_data():
     cursor, connection = db_connect()
     # queries for retrievint all rows
-    retrive = "Select * from activity_tbl;"
+    retrive = "Select * from tbl_tablename;"
 
     #executing the quires
     cursor.execute(retrive)

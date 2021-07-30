@@ -9,14 +9,14 @@ from mysql.connector import cursor
 from datetime import date, datetime, timedelta
 ##### MySQL Connection
 def mysql_cursor():
-    # cnx = mysql.connector.connect(user='root', password='mysql',
-    #                             host='127.0.0.1',
-    #                             database='connection_test')
+    # cnx = mysql.connector.connect(user='USERNAME', password='PASSWORD',
+    #                             host='HOSTNAME_OR_IP',
+    #                             database='DATABASE')
 
-    cnx = mysql.connector.connect(user='pmsdb', 
-                                password='pms@1234',
-                                host='192.168.0.236',
-                                database='pms')
+    cnx = mysql.connector.connect(user='USERNAME', 
+                                password='PASSWORD',
+                                host='HOSTNAME_OR_IP',
+                                database='DATABASE')
     print(cnx)
     cursor = cnx.cursor()
 

@@ -3,7 +3,7 @@ from pymodm import MongoModel, fields
 from pymodm.connection import connect
 
 # Connect to MongoDB and call the connection "my-app".
-connect("mongodb://127.0.0.1:27017/mongo_app", alias="mongo_app")
+connect("mongodb://127.0.0.1:27017/MONGO_APP_NAME", alias="MONGO_APP")
 
 
 class Connection(MongoModel):

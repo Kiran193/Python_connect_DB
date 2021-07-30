@@ -36,7 +36,7 @@ with open('config.json','r') as f:
 	config = json.load(f)
 
 app.config["DEBUG"] = True
-app.config['SECRET_KEY'] = 'BravisaTempleTreeEncryptedToken'
+app.config['SECRET_KEY'] = 'SECRETKEY'
 
 
 DBhost = config['DBLocal']['host']
@@ -68,11 +68,11 @@ def db_connect():
         app.config["DEBUG"] = True
         return conn
     else:
-        conn = psycopg2.connect(database="BravisaDB", user="sid", password="kayasid2018", host="/cloudsql/bravisa-temple-tree:asia-south1:btt-db", port="5432")
+        conn = psycopg2.connect(database="DBNAME", user="USERNAME", password="PASSWORD", host="HOST_NAME_OR_IP", port="PORT")
         return conn
 
 def db_connect_local():
-	conn = psycopg2.connect(database="newdb", user="postgres", password="postgres")
+	conn = psycopg2.connect(database="DBNAME", user="USERNAME", password="PASSWORD")
 	app.config["DEBUG"] = True
 	return conn
    
